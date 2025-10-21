@@ -7,6 +7,8 @@ let initialWeight = 6000; // Исходный вес в граммах
 let targetWeight = 5000; // Желанный вес в граммах
 let days = 0;
 
-while (targetWeight < initialWeight) {
-
+while (initialWeight > targetWeight) {
+  initialWeight *= 0.95;
+  days++;
 }
+console.log(days)
